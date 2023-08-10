@@ -24,7 +24,7 @@ public class Main {
         { // пример использования конструкции try-with-resources
             getException(); //вызов метода с выбросом исключения
         } catch (ArrayIndexOutOfBoundsException | IOException e) { //отлов исключения
-            Exception exception = new Exception("Array index out of bound."); //вывод стектрейса и сообщения к нему
+            Exception exception = new Exception("Array index out of bound"); //вывод стектрейса и сообщения к нему
             exception.printStackTrace();
         } catch (Exception e) {
             throw new RuntimeException(e);
